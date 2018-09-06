@@ -8,66 +8,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="assets/java/app.js"></script>
 </head>
 
 <body>
+
     <div class="container">
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <header class="header">NYT Search</header>
-            </div>
-            <div class="col-2"></div>
-        </div>
 
-
-
-
-
-
-
-
-
+        <header class="header text-center">
+            NYT Search
+        </header>
 
         <!--Search Form-->
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8" id="search-form">
-                <form>
-                    <!--search input-->
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Search Term:</label>
-                        <input type="search-term" class="form-control" id="search-bar">
-                    </div>
+        <div class="total-form">
 
-                    <!--records dropdown-->
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Number of Records to Retrieve:</label>
-                        <select class="form-control">
-                            <option>1</option>
-                            <option>5</option>
-                            <option>10</option>
-                            <option>20</option>
-                        </select>
-                    </div>
+            <div class="search-head">
+                <h3><strong>Search Parameters</strong></h3>
+            </div>
 
-                    <!--search btn-->
-                    <button type="submit" class="btn btn-primary">Search</button>
-                    <button type="submit" class="btn btn-primary">Clear</button>
-                </form>
+            <div class="row" id="search-form-row">
+                <div class="col-12" id="search-form">
+                    <form>
+                        <!--search input-->
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Search Term:</label>
+                            <input type="search-term" class="form-control" id="search-bar">
+                        </div>
+
+                        <!--records dropdown-->
+                        <div class="form-group">
+                            <label for="num-records">Number of Records to Retrieve:</label>
+                            <select class="form-control" id="records-bar">
+                                <option>1</option>
+                                <option>5</option>
+                                <option>10</option>
+                                <option>20</option>
+                            </select>
+                        </div>
+
+                        <!--start year-->
+                        <div class="form-group">
+                            <label for="start-year-input">Start Year (Optional):</label>
+                            <input type="start-year" class="form-control" id="start-bar">
+                        </div>
+
+                        <!--end year-->
+                        <div class="form-group">
+                            <label for="start-year-input">End Year (Optional):</label>
+                            <input type="end-year" class="form-control" id="end-bar">
+                        </div>
+
+                        <!--search btn-->
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-trash-alt"></i> Clear</button>
+                    </form>
+                </div>
 
             </div>
-            <div class="col-2"></div>
         </div>
 
-
-
-
-
-
-
+        <!--Top Articles-->
+        <div>
+            <span class="top-articles-head">Top Articles</span>
+        </div>
     </div>
 
 </body>

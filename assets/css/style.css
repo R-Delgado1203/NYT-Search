@@ -1,0 +1,10 @@
+#header-row{
+    margin-bottom: 30px;
+
+}
+.header{
+    background-color: darkblue;
+    color: white;
+    font-size: 50pt;
+    padding: 40px;    
+}
